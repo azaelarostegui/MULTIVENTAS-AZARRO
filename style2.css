@@ -1,0 +1,63 @@
+/*estilos globales*/
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 1200px;
+}
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'lato';
+    color: #333;
+}
+.icon-cart{
+    width: 100px;
+    height: 40px;
+    }
+img{
+    max-width: 100%;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+    }
+
+/*main*/
+.container .text-center{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    }
+.item{
+    border-radius: 10px;
+    }
+.item:hover{
+    box-shadow: 0 10px rgba(0, 0, 0, 0.20);
+}
+.info-product{
+    padding: 15px 30px;
+}
+
+.item img{
+    width: 100%;
+        --object-fit: cover;
+        width: 100%;  min-height: 100px; max-height: 100%;
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .container-items {
+        display: none;
+    }    
+    
+    }
+    @media screen and (min-width: 700px) {
+        .item img{
+        max-width: 300px;
+       } 
+    }
